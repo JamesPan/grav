@@ -1,0 +1,3 @@
+enabled: true
+siteId: '0'
+sitePiWikURL: 'https://127.0.0.1:8080/piwik'

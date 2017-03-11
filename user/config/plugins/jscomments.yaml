@@ -1,0 +1,22 @@
+enabled: true
+active: true
+provider: disqus
+providers:
+  disqus:
+    shortname: jamespan
+    show_count: false
+  facebook:
+    num_posts: 5
+    colorscheme: light
+    order_by: social
+    width: 100%
+  googleplus:
+    show_count: false
+    width: 100%
+  muut:
+    channel: General
+    widget: false
+    show_online: false
+    show_title: false
+    upload: false
+    share: true

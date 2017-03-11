@@ -1,0 +1,7 @@
+enabled: true
+route: /random
+redirect: false
+filters:
+  category:
+    - blog
+filter_combinator: and

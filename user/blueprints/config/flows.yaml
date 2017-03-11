@@ -1,0 +1,25 @@
+title: Flows
+form:
+  validation: loose
+  fields:
+    'pastime':
+      name: Pastime
+      type: list
+      label: Pastime
+      style: vertical
+      controls: both
+      collapsed: true
+
+      fields:
+        .title:
+          type: text
+          label: Title
+        .img:
+          type: text
+          label: Image
+        .url:
+          type: text
+          label: Link
+
+
+
