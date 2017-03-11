@@ -1,0 +1,9 @@
+<ul class="rrssb-buttons clearfix">
+    {% set page_url = socialbuttons_domain ~ url %}
+    {% for name, values in socialbuttons_buttons %}
+
+    {% if values.enabled %}
+        {% include 'partials/_' ~ name ~ '.html.twig' with {'label': values.label} %}
+    {% endif %}
+    {% endfor %}
+</ul>
