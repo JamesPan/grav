@@ -1,0 +1,5 @@
+<ul>
+{% for post in feed|slice(0, count)  %}
+    <li><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
