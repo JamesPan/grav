@@ -10,6 +10,7 @@ services:
       - "/home/panjiabang/gravbox/user/config/:/var/www/html/user/config/"
       - "/home/panjiabang/gravbox/user/data/:/var/www/html/user/data/"
       - "/home/panjiabang/gravbox/user/pages/:/var/www/html/user/pages/"
+      - "/home/panjiabang/gravbox/mod/:/var/www/html/mod/"
       - "/home/panjiabang/gravbox/logs/:/var/www/html/logs/"
     tmpfs:
       - /var/www/html/cache
