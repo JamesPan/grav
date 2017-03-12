@@ -10,6 +10,7 @@ services:
       - "/Users/panjiabang/Projects/grav/user/config/:/var/www/html/user/config/"
       - "/Users/panjiabang/Projects/grav/user/data/:/var/www/html/user/data/"
       - "/Users/panjiabang/Projects/grav/user/pages/:/var/www/html/user/pages/"
+      - "/Users/panjiabang/Projects/grav/mod/:/var/www/html/mod/"
     tmpfs:
       - /var/www/html/cache
       - /var/cache/nginx
