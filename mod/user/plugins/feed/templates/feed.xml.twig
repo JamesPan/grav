@@ -1,0 +1,44 @@
+{% set collection = collection|default(page.collection) %}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ page.title }}</title>
+    <link href="{{ page.url(true) }}{{ uri.path() }}.{{ uri.extension() }}" rel="self" />
+    <subtitle>{{ collection.params.description }}</subtitle>
+    <updated>{{ collection|first.date|date("Y-m-d\\TH:i:sP") }}</updated>
+    <author>
+        <name>{{ site.author.name|default("James Pan") }}</name>
+    </author>
+    <id>{{ uri.rootUrl(true) }}{{ uri.route() }}</id>
+    {% for item in collection %}
+    {% set banner = item.media.images|first %}
+    {% set header_image_width  = item.header.header_image_width|defined(600) %}
+    {% set header_image_height = item.header.header_image_height|defined(400) %}
+    {% set header_image_file = item.header.header_image_file %}
+    <entry>
+        <title>{{ item.title|e }}</title>
+        <id>{{ item.url(true) }}</id>
+        <updated>{{ item.date|date("Y-m-d\\TH:i:sP") }}</updated>
+        <published>{{ item.date|date("Y-m-d\\TH:i:sP") }}</published>
+        <link href="{{ item.url(true) }}"/>
+        {% for tag in item.taxonomy.tag %}
+        <category term="{{ tag|lower }}" label="{{ tag }}" />
+        {% endfor %}
+        <content type="html">
+            <![CDATA[
+            {% if header_image_file %}
+                {% if header_image_file matches '@(https?|ftp)://[^\s/$.?#].[^\s]*@' %}
+                    <img width="100%" src="{{ header_image_file }}">
+                {% else %}
+                    {% set header_image_media = item.media.images[header_image_file] %}
+                {% endif %}
+            {% else %}
+                {% set header_image_media = page.media.images|first %}
+            {% endif %}
+            {{ header_image_media.cropZoom(header_image_width, header_image_height).html }}
+            {{ item.summary|truncate_html(collection.params.length) }}
+            <p><a href="{{ item.url(true) }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+            ]]>
+        </content>
+    </entry>
+    {% endfor %}
+</feed>

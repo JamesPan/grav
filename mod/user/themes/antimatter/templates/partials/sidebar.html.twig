@@ -1,0 +1,99 @@
+{% set feed_url = blog.url == '/' or blog.url == base_url_relative ? (base_url_relative~'/'~blog.slug) : blog.url %}
+{% set new_base_url = blog.url == '/' ? '' : blog.url %}
+
+{% if config.plugins.simplesearch.enabled %}
+    <div class="sidebar-content">
+        {#<h4>{{ 'SIDEBAR.SIMPLE_SEARCH.HEADLINE'|t }}</h4>#}
+        <h4></h4>
+        {% include 'partials/simplesearch_searchbox.html.twig' %}
+    </div>
+{% endif %}
+
+<div id="sidebar-author" class="sidebar-content">
+    <h4>Author</h4>
+    <div id="sidebar-author-autobiography">
+        <div id="sidebar-author-placeholder" style="float: right;height: 100px"></div>
+        <img id="sidebar-author-avatar" src="{{ config.author.avatar }}" style="float: left;margin-right: 0.5rem;padding-top: 0.8rem;max-width: 40%;">
+        <img id="sidebar-author-donate" src="https://ws1.sinaimg.cn/large/e724cbefgy1fcw9cxsszrj20c30c3gno" style="float: right; clear: right;margin-right: 0.5rem;max-width: 40%;"/>
+        {{ config.author.autobiography }}
+    </div>
+
+    <div id="sidebar-author-social" style="margin: 0.5em 0;">
+        {% for props in config.author.social %}
+            <a href="{{ props.link }}" style="color: #444" title="{{ props.title }}">
+                <i style="display: inline-block;padding: 0 0.2em;" class="fa fa-lg fa-{{ props.icon }}" aria-hidden="true"></i>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+<script type="text/javascript">
+    function reset_placeholder_height() {
+        var ratio = 0.6;
+        var box = $("#sidebar-author-autobiography");
+        var placeholder = $("#sidebar-author-placeholder");
+        var donate = $("#sidebar-author-donate");
+        if (Math.abs(box.height() * ratio - placeholder.height()) < 1) {
+            return;
+        }
+        console.log(box.height() * ratio + ", " + placeholder.height());
+        placeholder.height(box.height() * ratio);
+        if (placeholder.height() + donate.height() >= box.height() * 0.8) {
+            return;
+        }
+        window.setTimeout(reset_placeholder_height, 100);
+    }
+    $(window).resize(function() {
+        reset_placeholder_height();
+    });
+    $(function () {
+        reset_placeholder_height();
+    })
+</script>
+
+{#<div class="sidebar-content">#}
+    {#<h4>Coffee</h4>#}
+    {#<img src="https://ws1.sinaimg.cn/large/e724cbefgy1fcw9cxsszrj20c30c3gno"/>#}
+{#</div>#}
+
+<div class="sidebar-content">
+    <h4>Recruit</h4>
+    目前我所在的技术团队是「阿里云<a href="https://www.aliyun.com/product/rds/" target="_blank" rel="external">云数据库</a>团队」，我们正在寻找优秀的资深工程师以及技术专家。如果你有数据库、云计算等方面的工作经验，或者在 Python、Java 等语言上有一定的造诣，而且愿意在云数据库平台领域做点事情，那么，我很期待你<a href="mailto:jiabang.pjb@alibaba-inc.com">来信</a>与我沟通交流，我们期待你的加入！
+</div>
+
+{% if config.plugins.relatedpages.enabled and related_pages|length > 0 %}
+    <h4>{{ 'SIDEBAR.RELATED_POSTS.HEADLINE'|t }}</h4>
+    {% include 'partials/relatedpages.html.twig' %}
+{% endif %}
+{% if config.plugins.random.enabled %}
+<div class="sidebar-content">
+	<h4>{{ 'SIDEBAR.RANDOM_ARTICLE.HEADLINE'|t }}</h4>
+	<a class="button" href="{{ base_url }}/random"><i class="fa fa-retweet"></i> {{ 'SIDEBAR.RANDOM_ARTICLE.FEELING_LUCKY'|t }}</a>
+</div>
+{% endif %}
+<!--<div class="sidebar-content">
+	<h4>{{ 'SIDEBAR.SOME_TEXT_WIDGET.HEADLINE'|t }}</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+</div>-->
+<div class="sidebar-content">
+	<h4>{{ 'SIDEBAR.LINKS.HEADLINE'|t }}</h4>
+	{% include 'partials/links.html.twig' %}
+</div>
+{% if config.plugins.taxonomylist.enabled %}
+<div class="sidebar-content">
+    <h4>{{ 'SIDEBAR.POPULAR_TAGS.HEADLINE'|t }}</h4>
+    {% include 'partials/taxonomylist.html.twig' with {'base_url':new_base_url, 'taxonomy':'tag'} %}
+</div>
+{% endif %}
+{% if config.plugins.archives.enabled %}
+<div class="sidebar-content">
+    <h4>{{ 'SIDEBAR.ARCHIVES.HEADLINE'|t }}</h4>
+	{% include 'partials/archives.html.twig' with {'base_url':new_base_url} %}
+</div>
+{% endif %}
+{#{% if config.plugins.feed.enabled %}#}
+{#<div class="sidebar-content syndicate">#}
+    {#<h4>{{ 'SIDEBAR.SYNDICATE.HEADLINE'|t }}</h4>#}
+    {#<a class="button" href="{{ feed_url }}.atom"><i class="fa fa-rss-square"></i> Atom</a>#}
+{#</div>#}
+{#{% endif %}#}
