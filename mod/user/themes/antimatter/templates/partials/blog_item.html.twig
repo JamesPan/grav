@@ -75,20 +75,14 @@
         </div>
     {% else %}
         <div class="e-content">
-            {#{% if page.template() == 'item' %}#}
-                {#{% if show_recruit_in_content %}#}
-                    {#{% include 'partials/recruit.html.twig' %}#}
-                {#{% endif %}#}
-                {#{% include 'partials/indicate-the-source.html.twig' %}#}
-            {#{% endif %}#}
             {{ page.content }}
 
             {% if page.template() == 'item' %}
             <script type="text/javascript">
             $(function () {
-                if(navigator.userAgent.match(/MicroMessenger/i)){
-                    $('body').prepend('<div style="overflow:hidden;width:0px;height:0;margin:0 auto;position:absolute;top:-800px;"><img src="{{ header_image_file }}"></div>')
-                };
+                if(navigator.userAgent.match(/MicroMessenger/i)) {
+                    $('body').prepend('<div style="overflow:hidden;width:0px;height:0;margin:0 auto;position:absolute;top:-800px;"><img src="{{ header_image_file }}"></div>');
+                }
             });
             </script>
             <p>
