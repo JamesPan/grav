@@ -1,0 +1,48 @@
+{#
+   Disqus, pronounced "discuss", is a service and tool for web comments
+   and discussions. Disqus makes commenting easier and more interactive,
+   while  connecting websites and commenters across a thriving discussion
+   community.
+
+   @see https://help.disqus.com/customer/portal/articles/472097-universal-embed-code
+   @see https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables
+ #}
+<div id="jscomments">
+  <div id="disqus_thread"></div>
+
+  {% if not language and grav.language.enabled %}
+    {% set language = grav.language.getLanguage %}
+  {% endif %}
+
+  <script type="text/javascript">
+    var disqus_shortname = '{{ shortname }}';
+    var disqus_identifier = '{{ id|default(page.rawRoute()) }}';
+    var disqus_title = "{{ title|default(page.title) }}";
+    var disqus_url = '{{ url|default(page.url(true, true)) }}';
+
+    (function() {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//a.disquscdn.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0])    .appendChild(dsq);
+    })();
+  </script>
+  <noscript>{{ 'PLUGINS.JS_COMMENTS.PROVIDERS.DISQUS.NOSCRIPT'|t }}</noscript>
+
+  {#
+     Adding Disqus comment count links to your home page.
+
+     @see https://help.disqus.com/customer/en/portal/articles/565624-adding-comment-count-links-to-your-home-page
+   #}
+  {% if show_count %}
+    <script type="text/javascript">
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//{{ shortname }}.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+  {% endif %}
+</div>
