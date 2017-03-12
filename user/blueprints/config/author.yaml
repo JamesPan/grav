@@ -1,0 +1,32 @@
+title: Author
+form:
+  validation: loose
+  fields:
+    avatar:
+      type: text
+      label: Avatar
+    autobiography:
+      type: textarea
+      label: 'Autobiography'
+#      size: medium
+    social:
+      name: Social
+      type: list
+      label: Social
+      style: vertical
+      controls: both
+      collapsed: true
+
+      fields:
+        .icon:
+          type: text
+          label: 'FontAwsome Icon'
+        .link:
+          type: text
+          label: Link
+        .title:
+          type: text
+          label: Title
+
+
+

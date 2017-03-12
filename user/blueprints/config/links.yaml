@@ -1,0 +1,22 @@
+title: Links
+form:
+  validation: loose
+  fields:
+    'sites':
+      name: sites
+      type: list
+      label: Titles & Links
+      style: vertical
+      controls: both
+      collapsed: false
+
+      fields:
+        .title:
+          type: text
+          label: Title
+        .link:
+          type: text
+          label: Link
+
+
+

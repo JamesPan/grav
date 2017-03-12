@@ -1,0 +1,28 @@
+{% macro input(name, value, type, size) %}
+    <input type="{{ type|default('text') }}" name="{{ name }}" value="{{ value|e }}" size="{{ size|default(20) }}" />
+{% endmacro %}
+
+{% macro image_flow(exhibits, render_css=true, use_lazyload=true, use_jquery=false, clazz="hexo-img-stream", placeholder="https://ws4.sinaimg.cn/large/e724cbefgw1etyppy7bgwg2001001017.gif") %}
+{% if render_css %}
+<style type="text/css">
+    .{{ clazz }}-lazy {display:block;}.{{ clazz }}{width:100%;margin:3% auto}div.{{ clazz }} figure{background:#fefefe;box-shadow:0 1px 2px rgba(34,25,25,0.4);margin:0 0.05% 3%;padding:3%;padding-bottom:10px;display:inline-block;max-width:24%}div.{{ clazz }} figure img{border-bottom:1px solid #ccc;padding-bottom:15px;margin-bottom:5px}div.{{ clazz }} figure figcaption{font-size:.9rem;color:#444;line-height:1.5;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}div.{{ clazz }} small{font-size:1rem;float:right;text-transform:uppercase;color:#aaa}div.{{ clazz }} small a{color:#666;text-decoration:none;transition:.4s color}@media screen and (max-width:750px){.{{ clazz }}{column-gap:0}}
+</style>
+{% endif %}
+<div class="{{ clazz }}">
+    {% for exhibition in exhibits %}
+        <figure>
+            <img class="{{ clazz }}-lazy" src="{{ placeholder }}" data-original="{{ exhibition.img }}">
+            <noscript><img src="{{ exhibition.img }}"></noscript>
+            <figcaption>
+                <a href="{{ exhibition.url }}" target="_blank" rel="external">{{ exhibition.title }}</a>
+            </figcaption>
+        </figure>
+    {% endfor %}
+</div>
+{% if use_lazyload %}
+<script src="//cdn.bootcss.com/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+    $('img.{{ clazz }}-lazy').lazyload({ effect:'fadeIn' });
+</script>
+{% endif %}
+{% endmacro %}

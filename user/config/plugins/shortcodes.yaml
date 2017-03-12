@@ -1,0 +1,24 @@
+enabled: true
+shortcodes:
+  assets:
+    enabled: false
+    options:
+      type: css
+      inline: false
+      priority: 10
+      pipeline: false
+  comment:
+    enabled: false
+  embed:
+    enabled: false
+  markdown:
+    enabled: false
+    options:
+      extra: true
+      auto_line_breaks: false
+      auto_url_links: false
+      escape_markup: false
+  summary:
+    enabled: false
+  twig:
+    enabled: true

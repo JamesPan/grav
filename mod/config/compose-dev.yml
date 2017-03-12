@@ -1,0 +1,19 @@
+version: "3"
+services:
+  blog:
+    container_name: blog
+    image: jamespan/gravbox
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/Users/panjiabang/Projects/grav/user/accounts/:/var/www/html/user/accounts/"
+      - "/Users/panjiabang/Projects/grav/user/config/:/var/www/html/user/config/"
+      - "/Users/panjiabang/Projects/grav/user/data/:/var/www/html/user/data/"
+      - "/Users/panjiabang/Projects/grav/user/pages/:/var/www/html/user/pages/"
+    tmpfs:
+      - /var/www/html/cache
+      - /var/cache/nginx
+    environment:
+      - GRAV_SERVER_PORT=8080
+      - GRAV_SERVER_NAME=blog.jamespan.me
+      - GRAV_HTTPS_STATUS=off

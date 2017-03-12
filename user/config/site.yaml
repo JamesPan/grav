@@ -1,7 +1,20 @@
-title: Grav
+title: 'James Pan''s Blog'
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: 'James Pan'
+  email: panjiabang@gmail.com
+taxonomies:
+  - category
+  - tag
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-
+  description: '潘小鶸，蒟蒻 研发工程师，客居杭州。喜欢学习研究新技术，然后中途弃坑。擅长构建无状态的分布式服务，更擅长让分布式系统进入无服务状态。梦想有朝一日成为 PPT 架构师。不会用 Git 只会用 SourceTree，没有 JetBrains 全家桶就写不出代码，没有 Google 和 StackOverflow 就解决不了技术问题 :)'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects:
+  '/tags/(.*)': '/tag:$1'
+routes:
+  /archives/: /posts
+blog:
+  route: /blog

@@ -1,0 +1,142 @@
+<div class="list-item h-entry">
+
+    {% set header_image = page.header.header_image|defined(true) %}
+    {% set header_image_width  = page.header.header_image_width|defined(900) %}
+    {% set header_image_height = page.header.header_image_height|defined(300) %}
+    {% set header_image_file = page.header.header_image_file %}
+
+    {% set show_header_image_in_content = page.header.show_header_image|defined(false) %}
+    {% set show_recruit_in_content = page.header.show_recruit|defined(true) %}
+
+    <div class="list-blog-header">
+        <span class="list-blog-date">
+            <time class="dt-published" datetime="{{ page.date|date("c") }}">
+                <span>{{ page.date|date("d") }}</span>
+                <em>{{ page.date|date("M") }}</em>
+            </time>
+        </span>
+        {% if page.header.link %}
+            <h4 class="p-name">
+                {% if page.header.continue_link is not sameas(false) %}
+                <a href="{{ page.url }}"><i class="fa fa-angle-double-right u-url"></i></a>
+                {% endif %}
+                <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
+            </h4>
+        {% else %}
+            <h4 class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h4>
+        {% endif %}
+
+        {% if page.taxonomy.tag %}
+        <span class="tags">
+            {% for tag in page.taxonomy.tag %}
+            <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
+            {% endfor %}
+        </span>
+        {% endif %}
+        {% if header_image %}
+            {% if truncate and page.summary != page.content or page.template() == 'item' and show_header_image_in_content %}
+                {% if header_image_file %}
+                    {% if header_image_file matches '@(https?|ftp)://[^\s/$.?#].[^\s]*@' %}
+                        <img style="object-fit: cover" width="100%" height="{{ header_image_height }}"  src="{{ header_image_file }}">
+                    {% else %}
+                        {% set header_image_media = page.media.images[header_image_file] %}
+                    {% endif %}
+                {% else %}
+                    {% set header_image_media = page.media.images|first %}
+                {% endif %}
+                {{ header_image_media.cropZoom(header_image_width, header_image_height).html }}
+            {% endif %}
+        {% endif %}
+
+    </div>
+
+    <div class="list-blog-padding">
+
+    {% if page.header.continue_link is sameas(false) %}
+        <div class="e-content">        
+            {{ page.content }}
+        </div>
+        {% if not truncate %}
+        {% set show_prev_next = true %}
+        {% endif %}
+    {% elseif truncate and page.summary != page.content %}
+        <div class="p-summary e-content">
+            {{ page.summary }}
+            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+        </div>
+    {% elseif truncate %}
+        <div class="p-summary e-content">
+            {% if page.summary != page.content %}
+                    {{ page.content|truncate(550) }}
+            {% else %}
+                    {{ page.content }}
+            {% endif %}
+            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+        </div>
+    {% else %}
+        <div class="e-content">
+            {#{% if page.template() == 'item' %}#}
+                {#{% if show_recruit_in_content %}#}
+                    {#{% include 'partials/recruit.html.twig' %}#}
+                {#{% endif %}#}
+                {#{% include 'partials/indicate-the-source.html.twig' %}#}
+            {#{% endif %}#}
+            {{ page.content }}
+
+            {#{% if page.template() == 'item' %}#}
+            {#<script type="text/javascript">#}
+            {#$(function () {#}
+                {#if(navigator.userAgent.match(/MicroMessenger/i)){#}
+                    {#$('body').prepend('<div style="overflow:hidden;width:0px;height:0;margin:0 auto;position:absolute;top:-800px;"><img src="{{ header_image_file }}"></div>')#}
+                {#};#}
+            {#});#}
+            {#</script>#}
+            {#<p>#}
+                {#<a href="http://creativecommons.org/licenses/by-sa/4.0/">#}
+                    {#<img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg?style=flat-square" alt="License: CC BY-SA 4.0">#}
+                {#</a>#}
+            {#</p>#}
+            {#{% endif %}#}
+
+        </div>
+
+        {% if page.header.math %}
+            {% include 'partials/mathjax.html.twig' %}
+        {% endif %}
+
+        {% if page.header.hljs %}
+            <script src="//cdn.bootcss.com/highlight.js/8.9.1/highlight.min.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+            <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/highlight.js/8.4/styles/github.min.css">
+        {% endif %}
+        
+        {#<p>#}
+            {#{% include 'partials/socialbuttons.html.twig' with {'url' : page.url} %}#}
+        {#</p>#}
+
+        {#{% if config.plugins.jscomments.enabled and page.header.comments %}#}
+            {#{{ jscomments() }}#}
+        {#{% endif %}#}
+
+        {#{% if config.plugins.comments.enabled %}#}
+            {#{% include 'partials/comments.html.twig' %}#}
+        {#{% endif %}#}
+
+        {% set show_prev_next = true %}
+    {% endif %}
+
+    {% if show_prev_next %}
+
+        <p class="prev-next">
+            {% if not page.isFirst %}
+                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> {{ 'BLOG.ITEM.NEXT_POST'|t }}</a>
+            {% endif %}
+
+            {% if not page.isLast %}
+                <a class="button" href="{{ page.prevSibling.url }}">{{ 'BLOG.ITEM.PREV_POST'|t }} <i class="fa fa-chevron-right"></i></a>
+            {% endif %}
+        </p>
+    {% endif %}
+
+    </div>
+</div>
