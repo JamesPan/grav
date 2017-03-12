@@ -1,13 +1,14 @@
 ---
 title: 'Java 时间格式化：有去无回之谜'
-math: true
-comments: true
+date: '2016-11-18 01:10'
 taxonomy:
     category:
         - blog
     tag:
         - Java
 header_image_file: 'https://ws4.sinaimg.cn/mw1024/006tNbRwgw1f9vlk6yr4jj31jk0rsgs7.jpg'
+math: true
+comments: true
 ---
 
 很长一段时间里，我一直以为，对于同一个时间格式，我们把一个时间对象序列化成字符串之后，还能反序列化成和原对象表达同一个时间的时间对象，至少在不考虑时区之类的问题时，这个命题应该成立。
