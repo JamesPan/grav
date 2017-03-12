@@ -9,6 +9,7 @@ filters:
     - blog
     - wiki
 filter_combinator: or
+ignore_accented_characters: false
 order:
   by: date
   dir: desc
