@@ -1,0 +1,14 @@
+.git
+tests
+vendor
+user/accounts/*
+webserver-configs
+Dockerfile
+.travis.yml
+
+# OS Generated
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.swp
