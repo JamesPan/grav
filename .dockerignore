@@ -2,6 +2,7 @@
 tests
 vendor
 user/accounts/*
+logs/popularity
 webserver-configs
 Dockerfile
 .travis.yml
