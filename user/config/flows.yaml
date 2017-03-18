@@ -1,5 +1,9 @@
 pastime:
   -
+    title: 我是处女座
+    img: 'https://ws1.sinaimg.cn/bmiddle/e724cbefgy1fdrecvsqaxj20ba0gotl7.jpg'
+    url: 'https://movie.douban.com/subject/26673217/'
+  -
     title: 月光男孩
     img: 'https://ws1.sinaimg.cn/bmiddle/e724cbefgy1fdkky0h56rj20bi0gogx9'
     url: 'https://movie.douban.com/subject/26648249/'
@@ -61,7 +65,7 @@ pastime:
     url: 'https://movie.douban.com/subject/23997724/'
   -
     title: 'Legal High SP'
-    img: 'http://ws1.sinaimg.cn/bmiddle/e724cbefgy1fce8mngdv3j20c80godr8'
+    img: 'https://ws1.sinaimg.cn/bmiddle/e724cbefgy1fce8mngdv3j20c80godr8'
     url: 'https://movie.douban.com/subject/21332518/'
   -
     title: 'Legal High'
