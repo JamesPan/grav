@@ -14,7 +14,7 @@
     <div id="sidebar-author-autobiography">
         <div id="sidebar-author-placeholder" style="float: right;height: 100px"></div>
         <img id="sidebar-author-avatar" src="{{ config.author.avatar }}" style="float: left;margin-right: 0.5rem;padding-top: 0.8rem;max-width: 40%;">
-        <img id="sidebar-author-donate" src="https://ws1.sinaimg.cn/large/e724cbefgy1fcw9cxsszrj20c30c3gno" style="float: right; clear: right;margin-right: 0.5rem;max-width: 40%;"/>
+        <img id="sidebar-author-donate" src="https://ws1.sinaimg.cn/bmiddle/e724cbefgy1fdsfakb9h8j20er0er3ys.jpg" style="float: right; clear: right;margin-right: 0.5rem;max-width: 40%;"/>
         {{ config.author.autobiography }}
     </div>
 
@@ -36,7 +36,7 @@
         if (Math.abs(box.height() * ratio - placeholder.height()) < 1) {
             return;
         }
-        console.log(box.height() * ratio + ", " + placeholder.height());
+        // console.log(box.height() * ratio + ", " + placeholder.height());
         placeholder.height(box.height() * ratio);
         if (placeholder.height() + donate.height() >= box.height() * 0.8) {
             return;
