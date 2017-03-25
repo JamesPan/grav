@@ -34,7 +34,6 @@
             {% else %}
                 {% set header_image_media = page.media.images|first %}
             {% endif %}
-            {{ header_image_media.cropZoom(header_image_width, header_image_height).html }}
             {{ item.summary|truncate_html(collection.params.length) }}
             <p><a href="{{ item.url(true) }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
             ]]>

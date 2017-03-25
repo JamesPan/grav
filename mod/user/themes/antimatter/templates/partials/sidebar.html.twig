@@ -14,7 +14,9 @@
     <div id="sidebar-author-autobiography">
         <div id="sidebar-author-placeholder" style="float: right;height: 100px"></div>
         <img id="sidebar-author-avatar" src="{{ config.author.avatar }}" style="float: left;margin-right: 0.5rem;padding-top: 0.8rem;max-width: 40%;">
-        <img id="sidebar-author-donate" src="https://ws1.sinaimg.cn/bmiddle/e724cbefgy1fdsfakb9h8j20er0er3ys.jpg" style="float: right; clear: right;margin-right: 0.5rem;max-width: 40%;"/>
+        {% if config.author.donate %}
+        <img id="sidebar-author-donate" src="{{ config.author.donate }}" style="float: right; clear: right;margin-right: 0.5rem;max-width: 40%;"/>
+        {% endif %}
         {{ config.author.autobiography }}
     </div>
 

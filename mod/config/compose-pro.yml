@@ -7,6 +7,7 @@ services:
       - "127.0.0.1:3030:80"
     volumes:
       - "/home/panjiabang/gravbox/user/accounts/:/var/www/html/user/accounts/"
+      - "/home/panjiabang/gravbox/user/blueprints/:/var/www/html/user/blueprints/"
       - "/home/panjiabang/gravbox/user/config/:/var/www/html/user/config/"
       - "/home/panjiabang/gravbox/user/data/:/var/www/html/user/data/"
       - "/home/panjiabang/gravbox/user/pages/:/var/www/html/user/pages/"
