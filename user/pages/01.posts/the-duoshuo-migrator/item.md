@@ -1,41 +1,39 @@
 ---
+title: '我把博客评论从多说迁移到 Disqus 时造的轮子'
+date: '2015-04-21 00:48'
+taxonomy:
+    category:
+        - blog
+        - Study
+    tag:
+        - Tool
+        - Python
+jscomments:
+    title: '我把博客评论从多说迁移到 Disqus 时造的轮子'
+    url: 'http://blog.jamespan.me/2015/04/21/the-duoshuo-migrator/'
+    id: /2015/04/21/the-duoshuo-migrator/
 cc: true
 comments: true
-date: '2015-04-21 00:48:10'
 hljs: true
-jscomments:
-  id: /2015/04/21/the-duoshuo-migrator/
-  title: 我把博客评论从多说迁移到 Disqus 时造的轮子
-  url: http://blog.jamespan.me/2015/04/21/the-duoshuo-migrator/
 routes:
-  aliases:
-  - posts/the-duoshuo-migrator
-  default: /2015/04/21/the-duoshuo-migrator
-taxonomy:
-  category:
-  - blog
-  - Study
-  tag:
-  - Python
-  - Tool
-title: 我把博客评论从多说迁移到 Disqus 时造的轮子
+    aliases:
+        - posts/the-duoshuo-migrator
+    default: /2015/04/21/the-duoshuo-migrator
 ---
 
-这是我在一年前随手写下的代码，而且这个代码只会被我使用一次，如今我已经没有精力和时间再去跟进和维护它了。如果你在使用中遇到问题，能够自己解决最好，不能解决的话请访问 http://urouge.github.io/migrate-to-disqus/ 获取一个更新的轮子，前些日子有人用它完成了评论系统的迁移。
+这是我在一年前随手写下的代码，而且这个代码只会被我使用一次，如今我已经没有精力和时间再去跟进和维护它了。如果你在使用中遇到问题，能够自己解决最好，不能解决的话请访问 <http://urouge.github.io/migrate-to-disqus/> 获取一个更新的轮子，前些日子有人用它完成了评论系统的迁移。
 
 ## 背景 ##
 
 前几天我受够了多说的各种漏洞和问题，终于把评论系统切换到了 Disqus。为了尽可能的保留之前网友们的留言和评论，我写了个 Python 程序把多说导出的 JSON 格式文件转换成了 Disqus 支持的 WXR (WordPress eXtended RSS) 格式。
 
-对切换评论系统的前因后果以及中间过程感兴趣的话，可以看看我之前的博文《{% post_link goodbye-duoshuo %}》。
+对切换评论系统的前因后果以及中间过程感兴趣的话，可以看看我之前的博文「[告别多说，拥抱 Disqus][4]」。
 
 ===
 
 ## 轮子 ##
 
 代码我以 GPL 2.0 协议开源托管在 [Github][2]，如果感兴趣可以自行取用。
-
-{% github JamesPan duoshuo-migrator 3f9938c %}
 
 代码明显属于糙快猛的风格，没有太多的讲究，能把活干好就行。好像自从我大学时期读了垠神的这篇 《[谈程序的“通用性”][1]》 之后，写出的脚本和一次性轮子都是这种风格。
 
@@ -69,3 +67,4 @@ python duoshuo-migrator.py -i ~/Desktop/export.json  -o a.xml
 [1]: http://www.yinwang.org/blog-cn/2013/04/13/generality/
 [2]: http://github.com/JamesPan/duoshuo-migrator
 [3]: https://www.haomwei.com
+[4]: /2015/04/18/goodbye-duoshuo

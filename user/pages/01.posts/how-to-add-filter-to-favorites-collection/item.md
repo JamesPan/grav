@@ -1,22 +1,22 @@
 ---
 title: 给博客的照片流添加过滤器
 date: '2017-02-01 21:42'
-comments: true
-hljs: true
 taxonomy:
     category:
         - blog
         - Study
     tag:
-        - JavaScript
-        - Hexo
         - Grav
+        - Hexo
+        - JavaScript
 header_image_file: 'https://ws1.sinaimg.cn/mw1024/e724cbefgy1fcbauul7smj20l90gqan9.jpg'
+comments: true
+hljs: true
 ---
 
 许久之前我分享了一个在 Hexo 博客中制作照片流的[方法][1]，至今这个照片流已经成为了我的博客中更新最频繁的页面，承载着我对那些曾经浪费我生命的美好事物的回忆，一开始是书籍和动漫、电影等影视作品，如今还多了个游戏，毕竟游戏继电影之后，也被归为艺术之列，号称「第九艺术」。
 
-我对照片流这个功能是如此的喜爱，以至于我将博客从 Hexo 迁移到 Grav 之后，之前为 Hexo 开发的几个插件都被我放弃了，唯一一个被窝移植到 Grav 上的，就是照片流。当然也有一部分原因是移植照片流的工作十分简单，以至于我只需要借助 Twig 模板的宏定义功能就能轻松搞定。
+我对照片流这个功能是如此的喜爱，以至于我将博客从 Hexo 迁移到 Grav 之后，之前为 Hexo 开发的几个插件都被我放弃了，唯一一个被我移植到 Grav 上的，就是照片流。当然也有一部分原因是移植照片流的工作十分简单，以至于我只需要借助 Twig 模板的宏定义功能就能轻松搞定。
 
 ===
 
