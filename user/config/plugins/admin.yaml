@@ -11,8 +11,8 @@ dashboard:
 widgets:
   dashboard-maintenance: true
   dashboard-statistics: true
-  dashboard-notifications: true
-  dashboard-feed: true
+  dashboard-notifications: false
+  dashboard-feed: false
   dashboard-pages: true
 session:
   timeout: 1800
