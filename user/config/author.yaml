@@ -24,5 +24,4 @@ social:
     icon: rss
     link: /atom.xml
     title: RSS
-autobiography: '潘小<ruby><rb>鶸</rb><rp>（</rp><rt>ruò</rt><rp>）</rp></ruby>，<a href="https://www.zhihu.com/question/23485077/answer/53777110" target="_blank">蒟蒻</a> 研发工程师，客居杭州。喜欢学习研究新技术，然后中途弃坑。擅长构建无状态的分布式服务，更擅长让分布式系统进入无服务状态。梦想有朝一日成为 PPT 架构师。不会用 Git 只会用 <a href="https://www.sourcetreeapp.com/">SourceTree</a>，没有 <a href="https://www.jetbrains.com/products.html">JetBrains 全家桶</a>就写不出代码，没有 Google 和 StackOverflow 就解决不了技术问题。喜欢我的博客可以请我喝杯咖啡~'
-donate: 'https://ws1.sinaimg.cn/bmiddle/e724cbefgy1fdsfakb9h8j20er0er3ys.jpg'
+autobiography: '潘小<ruby><rb>鶸</rb><rp>（</rp><rt>ruò</rt><rp>）</rp></ruby>，<a href="https://www.zhihu.com/question/23485077/answer/53777110" target="_blank">蒟蒻</a> 研发工程师，客居杭州。喜欢学习研究新技术，然后中途弃坑。擅长构建无状态的分布式服务，更擅长让分布式系统进入无服务状态。梦想有朝一日成为 PPT 架构师。不会用 Git 只会用 <a href="https://www.sourcetreeapp.com/">SourceTree</a>，没有 <a href="https://www.jetbrains.com/products.html">JetBrains 全家桶</a>就写不出代码，没有 Google 和 StackOverflow 就解决不了技术问题。'
