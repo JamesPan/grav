@@ -71,7 +71,7 @@ comments: true
 
    在为开源软件做 Docker 镜像的时候，经常在 build 阶段耗费大量时间，就算把明面上需要下载的资源弄到了本地，还是会在一些看不到的地方访问一些不存在的网站，比如 npm install 的时候，即使把仓库指向了墙内镜像，也还是招架不住某些软件包在 install.js 里去 Github 下东西，然后 Github 的资源又是托管在 S3 上的，除非在打包的时候开个 VPN 全局代理，否则 build 过程卡个半个多一个小时没结果是常有的事情。
 
-   幸好 Docker build 有一个 `--build-args` 参数，可以在 build 阶段设置一些环境变量，比如 `docker build --build-arg HTTPS_PROXY=127.0.0.1:8888 nobody/awesome-image .`，就可以在构建镜像的时候指定一个 https 协议代理。需要注意的是 mac OS 上的 Docker 是运行在一个虚拟机里的，127.0.0.1 指向的是虚拟机而不是宿主机，所以在 mac OS 上使用这个黑科技的时候，要把 IP 改成宿主机的 IP。
+   幸好 Docker build 有一个 `--build-arg` 参数，可以在 build 阶段设置一些环境变量，比如 `docker build --build-arg HTTPS_PROXY=127.0.0.1:8888 nobody/awesome-image .`，就可以在构建镜像的时候指定一个 https 协议代理。需要注意的是 mac OS 上的 Docker 是运行在一个虚拟机里的，127.0.0.1 指向的是虚拟机而不是宿主机，所以在 mac OS 上使用这个黑科技的时候，要把 IP 改成宿主机的 IP。
 
 4. 超时控制
 

@@ -1,24 +1,24 @@
 ---
+title: '告别多说，拥抱 Disqus'
+date: '2015-04-18 16:47'
+taxonomy:
+    category:
+        - blog
+        - Study
+    tag:
+        - Blogging
+        - Tool
+        - Python
+jscomments:
+    title: '告别多说，拥抱 Disqus'
+    url: 'http://blog.jamespan.me/2015/04/18/goodbye-duoshuo/'
+    id: /2015/04/18/goodbye-duoshuo/
 cc: true
 comments: true
-date: '2015-04-18 16:47:06'
-jscomments:
-  id: /2015/04/18/goodbye-duoshuo/
-  title: 告别多说，拥抱 Disqus
-  url: http://blog.jamespan.me/2015/04/18/goodbye-duoshuo/
 routes:
-  aliases:
-  - posts/goodbye-duoshuo
-  default: /2015/04/18/goodbye-duoshuo
-taxonomy:
-  category:
-  - blog
-  - Study
-  tag:
-  - Python
-  - Tool
-  - Blogging
-title: 告别多说，拥抱 Disqus
+    aliases:
+        - posts/goodbye-duoshuo
+    default: /2015/04/18/goodbye-duoshuo
 ---
 
 ## 背景 ##
@@ -73,7 +73,13 @@ title: 告别多说，拥抱 Disqus
 
 <del>如果我有时间把这次写的脚本整理成一个命令行程序，就单独再写一篇博客分享出来。</del>
 
-这次写的脚本在《{% post_link the-duoshuo-migrator %}》有详 (jiăn) 细 (lüè) 的介绍，欢迎使用~
+这次写的脚本在「[我把博客评论从多说迁移到 Disqus 时造的轮子][9]」有详 (jiăn) 细 (lüè) 的介绍，欢迎使用~
+
+---
+
+也许是受到[多说即将关闭][10]的影响，本文评论区涌入大量无意义评论，笔者不堪其扰只能关闭评论。
+
+评论恢复后还请读者不要在评论区测试、灌水~
 
 [1]: https://disqus.com
 [2]: https://disqus.com/admin/
@@ -83,3 +89,5 @@ title: 告别多说，拥抱 Disqus
 [6]: https://help.disqus.com/customer/portal/articles/472150-custom-xml-import-format
 [7]: http://lxml.de/index.html
 [8]: http://lxml.de/tutorial.html
+[9]: /2015/04/21/the-duoshuo-migrator
+[10]: http://dev.duoshuo.com/threads/58d1169ae293b89a20c57241

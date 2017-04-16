@@ -7,8 +7,10 @@ form:
       label: Avatar
     autobiography:
       type: textarea
-      label: 'Autobiography'
-#      size: medium
+      label: Autobiography
+    donate:
+      type: text
+      label: Donate
     social:
       name: Social
       type: list
