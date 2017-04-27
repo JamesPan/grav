@@ -11,7 +11,7 @@ services:
       - "/home/panjiabang/gravbox/user/config/:/var/www/html/user/config/"
       - "/home/panjiabang/gravbox/user/data/:/var/www/html/user/data/"
       - "/home/panjiabang/gravbox/user/pages/:/var/www/html/user/pages/"
-      - "/home/panjiabang/gravbox/user/plugins/:/var/www/html/user/plugins/"
+      - "/home/panjiabang/gravbox/user/plugins/ganalytics:/var/www/html/user/plugins/ganalytics"
       - "/home/panjiabang/gravbox/mod/:/var/www/html/mod/"
       - "/home/panjiabang/gravbox/logs/:/var/www/html/logs/"
     tmpfs:
