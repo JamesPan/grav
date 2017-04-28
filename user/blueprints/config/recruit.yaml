@@ -1,0 +1,7 @@
+title: Recruit
+form:
+  validation: loose
+  fields:
+    content:
+      type: textarea
+      label: Content
