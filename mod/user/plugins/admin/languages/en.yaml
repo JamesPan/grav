@@ -131,6 +131,7 @@ PLUGIN_ADMIN:
   USER: "User"
   LINKS: "Links"
   FLOWS: "Flows"
+  RECRUIT: "Recruit"
   ADD_ACCOUNT: "Add Account"
   SWITCH_LANGUAGE: "Switch Language"
   SUCCESSFULLY_ENABLED_PLUGIN: "Successfully enabled plugin"
