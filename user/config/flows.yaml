@@ -1,5 +1,9 @@
 pastime:
   -
+    title: 记忆大师
+    img: 'https://ws1.sinaimg.cn/bmiddle/e724cbefgy1ff2vedfyntj20bg0go15g.jpg'
+    url: 'https://movie.douban.com/subject/25884801/'
+  -
     title: 全职高手
     img: 'https://ws1.sinaimg.cn/bmiddle/e724cbefgy1ff0ldh7qc6j205006otas.jpg'
     url: 'http://book.qidian.com/info/1887208'
