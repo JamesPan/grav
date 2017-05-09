@@ -32,6 +32,7 @@ popularity:
   ignore:
     - '/test*'
     - /modular
+    - /atom.xml
   history:
     daily: '30'
     monthly: '12'
