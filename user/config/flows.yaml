@@ -1,5 +1,9 @@
 pastime:
   -
+    title: '纸牌屋 第五季'
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tKfTcgy1fg3w0bzriaj30ba0goq51.jpg'
+    url: 'https://movie.douban.com/subject/26718795/'
+  -
     title: 卖房子的女人
     img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fg37c0vlcxj30c70go0uk.jpg'
     url: 'https://movie.douban.com/subject/26720117/'
@@ -7,6 +11,10 @@ pastime:
     title: 加勒比海盗1：黑珍珠号的诅咒
     img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fg37alpjxgj30b70gomzv.jpg'
     url: 'https://movie.douban.com/subject/1298070/'
+  -
+    title: 荡寇风云
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fg37nya6bvj30bo0godjf.jpg'
+    url: 'https://movie.douban.com/subject/26385746/'
   -
     title: 提着心吊着胆
     img: 'https://ws4.sinaimg.cn/bmiddle/006tNbRwgy1fg26f6syq1j30bw0goaci.jpg'
