@@ -1,7 +1,6 @@
 ---
 title: 没有洗烘一体机的日子，仿佛身处石器时代
 date: '2017-05-28 23:37'
-comments: true
 taxonomy:
     category:
         - blog
@@ -9,6 +8,7 @@ taxonomy:
     tag:
         - Sketch
 header_image_file: 'https://ws3.sinaimg.cn/mw1024/006tNbRwgy1fg1i3dmmzpj30dw09tmyu.jpg'
+comments: true
 ---
 
 去年蜗居了一年的住所，唯一让我满意的，是那台我和室友一人拥有一半股份的洗衣机，准确来说是「洗烘一体机」，洗完衣服顺便烘干的那种。每一次搬家，都是一次断舍离。丢弃了不少瓶瓶罐罐，唯独这极具科技含量的造物，不舍得丢弃，和我那闲置一隅的 MUJI 换气扇一道，从那里搬到了这里。
