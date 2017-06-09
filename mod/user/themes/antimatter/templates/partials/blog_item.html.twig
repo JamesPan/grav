@@ -116,7 +116,9 @@
             {% include 'partials/comments.html.twig' %}
         {% endif %}
 
+        {% if page.template() == 'item' %}
         {% set show_prev_next = true %}
+        {% endif %}
     {% endif %}
 
     {% if show_prev_next %}
