@@ -1,5 +1,17 @@
 pastime:
   -
+    title: 加勒比海盗3：世界的尽头
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tKfTcgy1fgptsqxcnpj30bg0go766.jpg'
+    url: 'https://movie.douban.com/subject/1418192/'
+  -
+    title: 我的恐怖妻子
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tKfTcgy1fgp83umu3pj30bs0goq4r.jpg'
+    url: 'https://movie.douban.com/subject/26741568/'
+  -
+    title: 异形：契约
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tKfTcgy1fgp81ded8rj30bq0gognw.jpg'
+    url: 'https://movie.douban.com/subject/11803087/'
+  -
     title: 疾速特攻
     img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fgfc9xzfhxj30bs0gomzk.jpg'
     url: 'https://movie.douban.com/subject/26333560/'
