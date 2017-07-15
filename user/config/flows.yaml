@@ -1,5 +1,9 @@
 pastime:
   -
+    title: 悟空传
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tNc79gy1fhjtw9f2mxj30bx0goju9.jpg'
+    url: 'https://movie.douban.com/subject/26035290/'
+  -
     title: 喜欢你
     img: 'https://ws3.sinaimg.cn/bmiddle/006tKfTcgy1fhcr2shlakj30b10go40o.jpg'
     url: 'https://movie.douban.com/subject/26816383/'
