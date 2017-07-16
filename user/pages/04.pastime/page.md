@@ -20,8 +20,17 @@ routes:
 ===
 
 {{% twig %}}
+{% spaceless %}
 {% import "macros/macros.html.twig" as macros %}
-{{ macros.image_flow(config.flows.pastime) }}
+{% set items = {} %}
+{% if config.flows is defined %}
+  {% set items = items | merge(config.flows.pastime) %}
+{% endif %}
+{% if config.flows_archive is defined %}
+  {% set items = items | merge(config.flows_archive.pastime) %}
+{% endif %}
+{% endspaceless %}
+{{ macros.image_flow(items) }}
 {{% end %}}
 
 <p id="btn-more" align="center"><a class="button" href="javascript:;">Show More</a></p>
