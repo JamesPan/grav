@@ -7,7 +7,7 @@ taxonomies:
   - category
   - tag
 metadata:
-  description: '潘小鶸，云数据库管控平台技术专家，客居杭州。喜欢学习研究新技术，然后中途弃坑。擅长构建无状态的分布式服务，更擅长让分布式系统进入无服务状态。不会用 Git 只会用 SourceTree，没有 JetBrains 全家桶就写不出代码，没有 Google 和 StackOverflow 就解决不了技术问题。'
+  description: '潘小鶸，云数据库平台技术专家，客居杭州。喜欢学习研究新技术，然后中途弃坑。擅长构建无状态的分布式服务，更擅长让分布式系统进入无服务状态。不会用 Git 只会用 SourceTree，没有 JetBrains 全家桶就写不出代码，没有 Google 和 StackOverflow 就解决不了技术问题。'
 summary:
   enabled: true
   format: short

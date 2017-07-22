@@ -24,4 +24,4 @@ social:
     icon: rss
     link: /atom.xml
     title: RSS
-autobiography: '潘小<ruby><rb>鶸</rb><rp>（</rp><rt>ruò</rt><rp>）</rp></ruby>，云数据库管控平台技术专家，客居杭州。喜欢学习研究新技术，然后中途弃坑。擅长构建无状态的分布式服务，更擅长让分布式系统进入无服务状态。不会用 Git 只会用 <a href="https://www.sourcetreeapp.com/">SourceTree</a>，没有 <a href="https://www.jetbrains.com/products.html">JetBrains 全家桶</a>就写不出代码，没有 Google 和 StackOverflow 就解决不了技术问题。'
+autobiography: '潘小<ruby><rb>鶸</rb><rp>（</rp><rt>ruò</rt><rp>）</rp></ruby>，云数据库平台技术专家，客居杭州。喜欢学习研究新技术，然后中途弃坑。擅长构建无状态的分布式服务，更擅长让分布式系统进入无服务状态。不会用 Git 只会用 <a href="https://www.sourcetreeapp.com/">SourceTree</a>，没有 <a href="https://www.jetbrains.com/products.html">JetBrains 全家桶</a>就写不出代码，没有 Google 和 StackOverflow 就解决不了技术问题。'
