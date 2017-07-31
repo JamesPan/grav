@@ -1,5 +1,13 @@
 pastime:
   -
+    title: 我的前半生
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fi2azdaek0j30bo0gota9.jpg'
+    url: 'https://movie.douban.com/subject/26358696/'
+  -
+    title: 战狼2
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fi2ayn99duj30b00gotbp.jpg'
+    url: 'https://movie.douban.com/subject/26363254/'
+  -
     title: 绣春刀II：修罗战场
     img: 'https://ws1.sinaimg.cn/bmiddle/006tKfTcgy1fhs2dvcozqj30br0go0we.jpg'
     url: 'https://movie.douban.com/subject/26270502/'
