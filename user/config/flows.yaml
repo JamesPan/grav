@@ -1,5 +1,9 @@
 pastime:
   -
+    title: 战狼
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tKfTcgy1fi3mg4to5zj30bx0gon07.jpg'
+    url: 'https://movie.douban.com/subject/24753810/'
+  -
     title: 我的前半生
     img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fi2azdaek0j30bo0gota9.jpg'
     url: 'https://movie.douban.com/subject/26358696/'
