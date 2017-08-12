@@ -1,5 +1,9 @@
 pastime:
   -
+    title: 狼牙
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1figqzoh12rj30bx0godhw.jpg'
+    url: 'https://movie.douban.com/subject/3082452/'
+  -
     title: 窃听风云3
     img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fidu79po6kj30bo0go0vf.jpg'
     url: 'https://movie.douban.com/subject/10726941/'

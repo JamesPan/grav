@@ -1,0 +1,2 @@
+0 3 * * * cd /home/panjiabang/gravbox && git stash && git pull --rebase; git stash pop; git add -A && git commit -am "$(curl -s whatthecommit.com/index.txt)" && git push >> /tmp/gravbak.log 2>&1
+
