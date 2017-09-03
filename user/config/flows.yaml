@@ -1,5 +1,17 @@
 pastime:
   -
+    title: 银魂
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fj5m2xqwjmj30b40go0vi.jpg'
+    url: 'https://movie.douban.com/subject/26816086/'
+  -
+    title: 敦刻尔克
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fj5m1z7kapj30bb0goq4m.jpg'
+    url: 'https://movie.douban.com/subject/26607693/'
+  -
+    title: 一念无明
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fj5m1bhsh3j30bw0go770.jpg'
+    url: 'https://movie.douban.com/subject/26704590/'
+  -
     title: 极盗车神
     img: 'https://ws2.sinaimg.cn/bmiddle/006tNc79gy1fizhnqgtfwj30bh0godig.jpg'
     url: 'https://movie.douban.com/subject/25933890/'
