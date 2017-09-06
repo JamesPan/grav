@@ -1,34 +1,32 @@
 ---
+title: 'Tmux、Luit 杂谈'
+date: '2015-06-12 00:13'
+taxonomy:
+    category:
+        - blog
+        - Study
+    tag:
+        - Linux
+        - Encoding
+jscomments:
+    title: 'Tmux、Luit 杂谈'
+    url: 'http://blog.jamespan.me/2015/06/12/luit-with-tmux/'
+    id: /2015/06/12/luit-with-tmux/
 cc: true
 comments: true
-date: '2015-06-12 00:13:02'
 hljs: true
-jscomments:
-  id: /2015/06/12/luit-with-tmux/
-  title: Tmux、Luit 杂谈
-  url: http://blog.jamespan.me/2015/06/12/luit-with-tmux/
 routes:
-  aliases:
-  - posts/luit-with-tmux
-  default: /2015/06/12/luit-with-tmux
-taxonomy:
-  category:
-  - blog
-  - Study
-  tag:
-  - Encoding
-  - Linux
-thumbnail: https://ws1.sinaimg.cn/small/e724cbefgw1et0lz06e18j212p0nywk0.jpg
-title: Tmux、Luit 杂谈
+    aliases:
+        - posts/luit-with-tmux
+    default: /2015/06/12/luit-with-tmux
+thumbnail: 'https://ws1.sinaimg.cn/small/e724cbefgw1et0lz06e18j212p0nywk0.jpg'
 ---
 
 最近有一天在半睡半醒间折腾应用的部署脚本，折腾好了天也亮了。期间顺便折腾了一下 Tmux 和 Luit，弄了一套勉强可用的 Tmux 配置出来。
 
-sdfsdTmux 一般都是安装在服务器使用才能发挥最大效用，本地使用的话，似乎只能当作一个终端复用的工具，对效率没有太明显的提升。
+Tmux 一般都是安装在服务器使用才能发挥最大效用，本地使用的话，似乎只能当作一个终端复用的工具，对效率没有太明显的提升。
 
 ===
-
-
 
 其实我大学期间就有用过 Tmux，而且那时候我还给实验室的服务器装了个 Tmux 来用着。但是那时候我没有怎么折腾配置，就着原生的配置，切切窗口，还觉得要想复制一个东西太麻烦了。
 
