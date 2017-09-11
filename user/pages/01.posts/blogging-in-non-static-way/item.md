@@ -37,7 +37,7 @@ comments: true
 
 言归正传。用了 Hexo 这一年多我也没有什么别的，大概三件事：
 
-+ 一个，开发了 [hexo-ruby-character][7]
++ 第一个，开发了 [hexo-ruby-character][7]
 + 第二个，开发了 [hexo-filter-indicate-the-source][8]
 + 第三个，给我的博客加上了自动部署和高可用部署
 
