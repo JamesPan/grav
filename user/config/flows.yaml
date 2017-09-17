@@ -1,5 +1,17 @@
 pastime:
   -
+    title: 猩球崛起2：黎明之战
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fjlvkhw5h3j30bo0goq5h.jpg'
+    url: 'https://movie.douban.com/subject/7046723/'
+  -
+    title: 猩球崛起
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fjlvjqwjnlj30bh0gomz5.jpg'
+    url: 'https://movie.douban.com/subject/3274505/'
+  -
+    title: 猩球崛起3：终极之战
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tKfTcgy1fjlvlec7bwj30b80gowgy.jpg'
+    url: 'https://movie.douban.com/subject/25808075/'
+  -
     title: 蜘蛛侠：英雄归来
     img: 'https://ws4.sinaimg.cn/bmiddle/006tKfTcgy1fjjlkh0autj30bp0gon0g.jpg'
     url: 'https://movie.douban.com/subject/24753477/'
