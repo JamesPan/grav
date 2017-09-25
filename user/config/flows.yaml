@@ -1,5 +1,13 @@
 pastime:
   -
+    title: 春风十里，不如你
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fjut2z547kj309d0gognp.jpg'
+    url: 'https://movie.douban.com/subject/26861629/'
+  -
+    title: 王牌保镖
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fjut1nqgv4j30bq0gogok.jpg'
+    url: 'https://movie.douban.com/subject/22266126/'
+  -
     title: 猩球崛起2：黎明之战
     img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fjlvkhw5h3j30bo0goq5h.jpg'
     url: 'https://movie.douban.com/subject/7046723/'
