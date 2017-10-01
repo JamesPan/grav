@@ -1,5 +1,13 @@
 pastime:
   -
+    title: 建军大业
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk2hb3qy4xj30tp15oqil.jpg'
+    url: 'https://movie.douban.com/subject/26692823/'
+  -
+    title: 恰如其分的软件架构
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fk1v1uyvqij30960b6gn4.jpg'
+    url: 'https://book.douban.com/subject/24872314/'
+  -
     title: 空天猎
     img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fk0srhwsdxj30ju0rste9.jpg'
     url: 'https://movie.douban.com/subject/26753020/'
