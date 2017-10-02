@@ -1,5 +1,17 @@
 pastime:
   -
+    title: 英伦对决
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk34hlofzuj30u01avkad.jpg'
+    url: 'https://movie.douban.com/subject/25723583/'
+  -
+    title: 追龙
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tKfTcgy1fk35cwixn3j30iv0qe43r.jpg'
+    url: 'https://movie.douban.com/subject/26425068/'
+  -
+    title: 四重奏
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tKfTcly1fk2l1v8nk0j30ku0tejtv.jpg'
+    url: 'https://movie.douban.com/subject/26895171/'
+  -
     title: 建军大业
     img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk2hb3qy4xj30tp15oqil.jpg'
     url: 'https://movie.douban.com/subject/26692823/'
