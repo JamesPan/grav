@@ -1,5 +1,17 @@
 pastime:
   -
+    title: 羞羞的铁拳
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tKfTcgy1fk5dcxjmpvj30u015zk40.jpg'
+    url: 'https://movie.douban.com/subject/27038183/'
+  -
+    title: 逆时营救
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk4xilllk3j30go0odtcl.jpg'
+    url: 'https://movie.douban.com/subject/26667056/'
+  -
+    title: 反转人生
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk4xhxjmuqj30fn0m878v.jpg'
+    url: 'https://movie.douban.com/subject/25827741/'
+  -
     title: 英伦对决
     img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk34hlofzuj30u01avkad.jpg'
     url: 'https://movie.douban.com/subject/25723583/'
