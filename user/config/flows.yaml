@@ -1,5 +1,13 @@
 pastime:
   -
+    title: 江湖论剑实录
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk6g8fn1rpj30u015z1dl.jpg'
+    url: 'https://movie.douban.com/subject/24758396/'
+  -
+    title: 消失的凶手
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk6d25ua2wj30pg0zkn53.jpg'
+    url: 'https://movie.douban.com/subject/25778483/'
+  -
     title: 羞羞的铁拳
     img: 'https://ws4.sinaimg.cn/bmiddle/006tKfTcgy1fk5dcxjmpvj30u015zk40.jpg'
     url: 'https://movie.douban.com/subject/27038183/'
@@ -7,6 +15,10 @@ pastime:
     title: 逆时营救
     img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk4xilllk3j30go0odtcl.jpg'
     url: 'https://movie.douban.com/subject/26667056/'
+  -
+    title: 消失的子弹
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tKfTcgy1fk6d1acltdj30u015z7hk.jpg'
+    url: 'https://movie.douban.com/subject/6991110/'
   -
     title: 反转人生
     img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fk4xhxjmuqj30fn0m878v.jpg'

@@ -20,7 +20,7 @@ warnings:
   delete_page: true
 edit_mode: normal
 show_github_msg: true
-google_fonts: true
+google_fonts: false
 enable_auto_updates_check: false
 notifications:
   feed: true
