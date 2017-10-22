@@ -1,5 +1,13 @@
 pastime:
   -
+    title: 王牌特工2：黄金圈
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tKfTcgy1fkqaibua1aj30u017l7cl.jpg'
+    url: 'https://movie.douban.com/subject/26378579/'
+  -
+    title: 王牌特工：特工学院
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tKfTcgy1fkqahq8b2mj30u016lai8.jpg'
+    url: 'https://movie.douban.com/subject/24405378/'
+  -
     title: 如果有妹妹就好了
     img: 'https://ws2.sinaimg.cn/bmiddle/006tNc79gy1fkdic60z3tj30ku0ucjz1.jpg'
     url: 'https://movie.douban.com/subject/27018291/'
