@@ -1,5 +1,13 @@
 pastime:
   -
+    title: 将军在上
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fl8l5u01s2j30ju0rswja.jpg'
+    url: 'https://movie.douban.com/subject/26808247/'
+  -
+    title: 密战
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fl8l2w900jj30u016l4an.jpg'
+    url: 'https://movie.douban.com/subject/26316956/'
+  -
     title: 架构真经
     img: 'https://ws3.sinaimg.cn/bmiddle/006tKfTcgy1fkz2anubktj308l0c0t9u.jpg'
     url: 'https://book.douban.com/subject/27020143/'
