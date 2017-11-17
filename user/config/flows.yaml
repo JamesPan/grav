@@ -1,5 +1,13 @@
 pastime:
   -
+    title: 猎场
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1flke2nhptgj30u0160guc.jpg'
+    url: 'https://movie.douban.com/subject/26322642/'
+  -
+    title: 东方快车谋杀案
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tNc79gy1flke1r4hzcj30u018f7dv.jpg'
+    url: 'https://movie.douban.com/subject/25790761/'
+  -
     title: 将军在上
     img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fl8l5u01s2j30ju0rswja.jpg'
     url: 'https://movie.douban.com/subject/26808247/'
