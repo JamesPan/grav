@@ -1,5 +1,9 @@
 pastime:
   -
+    title: 芳华
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fmehdt5rl4j30u018ndoy.jpg'
+    url: 'https://movie.douban.com/subject/26862829/'
+  -
     title: 猎场
     img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1flke2nhptgj30u0160guc.jpg'
     url: 'https://movie.douban.com/subject/26322642/'
