@@ -1,5 +1,17 @@
 pastime:
   -
+    title: 机器之血
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fmpz6p7vhvj30j20qoagg.jpg'
+    url: 'https://movie.douban.com/subject/26729868/'
+  -
+    title: 奇门遁甲
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fmpz5w7c26j30u015zqlm.jpg'
+    url: 'https://movie.douban.com/subject/26661191/'
+  -
+    title: 区块链原理、设计与应用
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fmpz4qy7pnj306o08yaa9.jpg'
+    url: 'https://book.douban.com/subject/27127839/'
+  -
     title: 芳华
     img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fmehdt5rl4j30u018ndoy.jpg'
     url: 'https://movie.douban.com/subject/26862829/'
