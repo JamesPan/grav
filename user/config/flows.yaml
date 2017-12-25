@@ -1,5 +1,13 @@
 pastime:
   -
+    title: 天生不对
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tKfTcgy1fmruc0ub68j30u016kwsm.jpg'
+    url: 'https://movie.douban.com/subject/26696871/'
+  -
+    title: 妖猫传
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tKfTcgy1fmrua5s7s0j30rs12tdsj.jpg'
+    url: 'https://movie.douban.com/subject/5350027/'
+  -
     title: 机器之血
     img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fmpz6p7vhvj30j20qoagg.jpg'
     url: 'https://movie.douban.com/subject/26729868/'

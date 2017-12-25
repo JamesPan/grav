@@ -22,4 +22,4 @@ routes:
         - /atom
 ---
 
-<img src="https://i.imgur.com/ddkDCh6.png" alt="simplicity is prerequisite for reliability">
+<img style="opacity: 0" src="https://i.imgur.com/ddkDCh6.png" alt="simplicity is prerequisite for reliability">
