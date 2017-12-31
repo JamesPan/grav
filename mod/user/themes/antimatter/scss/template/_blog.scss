@@ -75,6 +75,10 @@
             border-top: 1px solid $border-color;
             font-style: normal;
             text-transform: uppercase;
+
+            div {
+                line-height: 0;
+            }
         }
     }
 }
