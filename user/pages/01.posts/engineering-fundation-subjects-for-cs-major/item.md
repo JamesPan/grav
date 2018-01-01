@@ -1,12 +1,14 @@
 ---
 title: 计算机科学专业的工程基础课
 date: '2017-10-07 22:27'
-comments: true
 taxonomy:
     category:
         - blog
         - Study
+    tag:
+        - Experience
 header_image_file: 'https://ws3.sinaimg.cn/mw1024/006tKfTcgy1fka1wtftctj30qo0a7gov.jpg'
+comments: true
 ---
 
 近些年，随着大数据的兴起，人工智能的复苏，科班出身的应届生，优秀的本来就挺少，十个里面有八个在求职的时候都奔着「算法工程师」的职位去。也难怪我们这些从「研发工程师」一路走来的人，每年的校招时节，都感叹靠谱的做工程的应届生越来越难找了。
