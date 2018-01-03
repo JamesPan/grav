@@ -24,9 +24,9 @@ google_fonts: true
 enable_auto_updates_check: false
 notifications:
   feed: true
-  dashboard: true
-  plugins: true
-  themes: true
+  dashboard: false
+  plugins: false
+  themes: false
 popularity:
   enabled: true
   ignore:
