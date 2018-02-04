@@ -1,5 +1,29 @@
 pastime:
   -
+    title: 恋爱先生
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fo3qnvkl66j30u015z468.jpg'
+    url: 'https://movie.douban.com/subject/26827972/'
+  -
+    title: 南极之恋
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fo3qjn3nsfj30u016knb4.jpg'
+    url: 'https://movie.douban.com/subject/26628329/'
+  -
+    title: 移动迷宫3：死亡解药
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fo3qj3zt96j30jn0sgq87.jpg'
+    url: 'https://movie.douban.com/subject/26004132/'
+  -
+    title: 虎啸龙吟
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fo3qlnslmzj30u016mh1q.jpg'
+    url: 'https://movie.douban.com/subject/27087788/'
+  -
+    title: 艳骨
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fo3qn0nqgij30u019z15b.jpg'
+    url: 'https://movie.douban.com/subject/26984555/'
+  -
+    title: 无问西东
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fo3qihz5rpj30u016uwqd.jpg'
+    url: 'https://movie.douban.com/subject/6874741/'
+  -
     title: 急诊科医生
     img: 'https://ws3.sinaimg.cn/bmiddle/006tKfTcgy1fn13xw0zm7j30u01b4al3.jpg'
     url: 'https://movie.douban.com/subject/26868392/'
