@@ -1,8 +1,12 @@
 pastime:
   -
-    title: 恋爱先生
-    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fo3qnvkl66j30u015z468.jpg'
-    url: 'https://movie.douban.com/subject/26827972/'
+    title: 忌日快乐
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tNc79gy1fo4wo0w7ggj30g40ogq4f.jpg'
+    url: 'https://movie.douban.com/subject/27027913/'
+  -
+    title: 我用一年一万日元卖掉寿命
+    img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fo4wqnx5mhj30800cr74z.jpg'
+    url: 'https://book.douban.com/subject/27599704/'
   -
     title: 南极之恋
     img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fo3qjn3nsfj30u016knb4.jpg'
@@ -11,6 +15,10 @@ pastime:
     title: 移动迷宫3：死亡解药
     img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fo3qj3zt96j30jn0sgq87.jpg'
     url: 'https://movie.douban.com/subject/26004132/'
+  -
+    title: 恋爱先生
+    img: 'https://ws3.sinaimg.cn/bmiddle/006tNc79gy1fo3qnvkl66j30u015z468.jpg'
+    url: 'https://movie.douban.com/subject/26827972/'
   -
     title: 虎啸龙吟
     img: 'https://ws4.sinaimg.cn/bmiddle/006tNc79gy1fo3qlnslmzj30u016mh1q.jpg'
