@@ -1,12 +1,14 @@
 ---
 title: 关于「开闭原则」的一点体会
-published: false
+date: '2018-02-17 21:43'
 taxonomy:
     category:
         - blog
         - Study
     tag:
         - Architecture
+header_image_file: 'https://ws1.sinaimg.cn/mw1024/006tNc79gy1fojs28na3kj30sg0e8dk8.jpg'
+comments: true
 ---
 
 > 在面向对象编程领域中，开闭原则规定“软件中的对象（类，模块，函数等等）应该对于扩展是开放的，但是对于修改是封闭的”，这意味着一个实体是允许在不改变它的源代码的前提下变更它的行为
@@ -19,7 +21,7 @@ taxonomy:
 
 拉起 Restlet 会占用 MetaSpace 20MB 的内存，而且如果系统比较简单，没有使用依赖注入和扫包，系统可以在 400ms 之内完成初始化，在今天这个时间点，流行的 Java Web 框架中几乎就没有能够秒起的，这个速度可以算是快得飞起了，如果没使用 ServiceLoader 和 JAX-RS 的话，这个启动时间还会更短。
 
-比较遗憾的是，Restlet 并不支持 JAX-RS 2.0，像 @Suspended 这样的异步注解是没法用的。之前一个类似的项目中我用了 Jersey + Undertow 这套方案，基本上和 Restlet + JDK HTTP 是对应的组合，Jersey/Restlet 是 RESTful 框架，Undertow 是一个异步的基于 Reactor 模型的 HTTP 服务器，而 JDK HTTP 则基于线程模型。
+比较遗憾的是，Restlet 并不支持 JAX-RS 2.0，像 `@Suspended` 这样的异步注解是没法用的。之前一个类似的项目中我用了 Jersey + Undertow 这套方案，基本上和 Restlet + JDK HTTP 是对应的组合，Jersey/Restlet 是 RESTful 框架，Undertow 是一个异步的基于 Reactor 模型的 HTTP 服务器，而 JDK HTTP 则基于线程模型。
 
 Undertow 也是号称轻量而且性能优异，但是 Jersey 可就比 Restlet 复杂多了，于是 Jersey + Undertow 在内存的占用上也就水涨船高，不过不多，也就多用了 5MB MetaSpace 和 1MB Heap 而已。大多数时候，用 6MB 内存换一个全功能的 Servlet 3.0 服务器还是一笔划算的交易。
 
@@ -30,3 +32,19 @@ Undertow 也是号称轻量而且性能优异，但是 Jersey 可就比 Restlet 
 说回开闭原则。
 
 Undertow 提供了 Access Log 机制，可以在初始化 AccessLogHandler 时传入日志格式，格式中的不同字段会被分配到不同的属性操作器（ExchangeAttribute）上独立提取。每个属性操作器都实现 ExchangeAttribute 接口，通过 ServiceLoader 机制构造实例。
+
+在 Access Log 中输出未经处理的 Query String，有的时候会暴露一些奇怪的信息，特别是有些遗留系统还有把密码明文在 GET 请求里发送这种坑爹玩意，或者保不齐后来的菜鸟一个手抖把密码当作查询参数发了出去。总之我们需要自定义一个 ExchangeAttribute 以替换其默认实现。
+
+如何让软件在不改动源码的前提下改变其行为？
+
+首先要有加载未知代码的能力。这一能力在 Java 系统中一般通过 ServiceLoader 或者 IoC + package scan 实现。ServiceLoader 是 Java 提供的能力，只要按照规范去实现接口，声明实现，Java 就能在运行时获取到指定接口在 classpath 内的所有候选实现。
+
+其次要有能从一堆候选实现中找到预期的那个。我们通常使用一种简化的责任链模式，对于所有候选的实现，传入构造参数，哪个实现能返回一个非空结果，就用那个实现。最典型的官方代码就是 JDBC。我们会把三四种驱动注册给 JDBC，获取数据库连接的时候，JDBC 框架拿着数据库连接和属性，挨个传递给驱动，直到有驱动返回了 Connection 对象才终止尝试。
+
+考虑到同一个字段可能会有多个 ExchangeAttribute 实现，Undertow 默认的，开发者自己加的，开发者后来又加的，后后来又加的……如何从框架层面提供一种能力，让开发者能够掌控候选实现的选择结果？很简单，引入优先级，如果多个候选实现都能响应，用其中优先级最高的。
+
+优先级可是是个好东西，之前我曾经因为 JDBC 没有实现优先级这个东西，写出一个罢葛。那时候我增强了一个 MySQL 驱动，和官方驱动一起注册到了 JDBC 里，然后出现一个奇怪的现象。当时我们用 iptables 模拟丢包，传递给驱动的连接超时和读超时都是 13s，但是最后 JDBC 抛出 Connect Timeout 却花了 26s，与此对应的，读超时却依旧保持 13s。当时我为了排查这个问题手段出尽，断点调试，网络抓包各种看，却毫无头绪。
+
+直到几天后我才想到这个连接超时翻倍，也许和我注册了两个 MySQL 兼容的驱动有关系， JDBC 尝试第一个驱动超时之后，没有立刻退出，继续用第二个驱动尝试，于是超时就翻倍了。考虑到我增强的驱动能够完整兼容官方驱动，最终的解决方案也很简单粗暴，加载增强驱动之后用反射排除官方驱动。
+
+
