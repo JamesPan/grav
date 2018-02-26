@@ -3,6 +3,7 @@ title: Trivia
 jscomments:
     active: false
 child_type: entry
+visible: false
 content:
     items: '@self.children'
     limit: '5'

@@ -5,6 +5,7 @@ jscomments:
     title: Nonsense
     url: 'http://blog.jamespan.me/bullshit/'
     id: /nonsense/index.html
+visible: false
 comments: true
 routes:
     aliases:

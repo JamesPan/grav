@@ -1,5 +1,21 @@
 pastime:
   -
+    title: 生存家族
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fosiul6qhuj30bu0hbq5g.jpg'
+    url: 'https://movie.douban.com/subject/26815162/'
+  -
+    title: 克隆丈夫
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tNc79gy1fositxq555j30u0190qf1.jpg'
+    url: 'https://movie.douban.com/subject/3094696/'
+  -
+    title: 技术的本质
+    img: 'https://ws1.sinaimg.cn/bmiddle/006tNc79gy1fosiqwg100j308x0bit91.jpg'
+    url: 'https://book.douban.com/subject/25846075/'
+  -
+    title: 唐人街探案2
+    img: 'https://ws2.sinaimg.cn/bmiddle/006tNc79gy1fosiped98cj30rs12waqa.jpg'
+    url: 'https://movie.douban.com/subject/26698897/'
+  -
     title: 忌日快乐
     img: 'https://ws2.sinaimg.cn/bmiddle/006tNc79gy1fo4wo0w7ggj30g40ogq4f.jpg'
     url: 'https://movie.douban.com/subject/27027913/'
