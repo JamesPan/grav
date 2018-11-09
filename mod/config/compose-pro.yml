@@ -6,14 +6,14 @@ services:
     ports:
       - "127.0.0.1:3030:80"
     volumes:
-      - "/home/panjiabang/gravbox/user/accounts/:/var/www/html/user/accounts/"
-      - "/home/panjiabang/gravbox/user/blueprints/:/var/www/html/user/blueprints/"
-      - "/home/panjiabang/gravbox/user/config/:/var/www/html/user/config/"
-      - "/home/panjiabang/gravbox/user/data/:/var/www/html/user/data/"
-      - "/home/panjiabang/gravbox/user/pages/:/var/www/html/user/pages/"
-      - "/home/panjiabang/gravbox/user/plugins/ganalytics:/var/www/html/user/plugins/ganalytics"
-      - "/home/panjiabang/gravbox/mod/:/var/www/html/mod/"
-      - "/home/panjiabang/gravbox/logs/:/var/www/html/logs/"
+      - "/root/gravbox/user/accounts/:/var/www/html/user/accounts/"
+      - "/root/gravbox/user/blueprints/:/var/www/html/user/blueprints/"
+      - "/root/gravbox/user/config/:/var/www/html/user/config/"
+      - "/root/gravbox/user/data/:/var/www/html/user/data/"
+      - "/root/gravbox/user/pages/:/var/www/html/user/pages/"
+      - "/root/gravbox/user/plugins/ganalytics:/var/www/html/user/plugins/ganalytics"
+      - "/root/gravbox/mod/:/var/www/html/mod/"
+      - "/root/gravbox/logs/:/var/www/html/logs/"
     tmpfs:
       - /var/www/html/cache
       - /var/cache/nginx

@@ -8,7 +8,7 @@ jscomments:
 comments: true
 ---
 
-小鶸一枚，除了 Java、Python 和 Golang，其他语言都没生产环境经验的代码渣
+小鶸一枚，除了 Java、Python、Kotlin 和 Golang，其他语言都没生产环境经验的代码渣
 
 技能树全部点在了分布式系统设计和架构上，然而并不会 Erlang 和 Akka 所以还是个半吊子
 
